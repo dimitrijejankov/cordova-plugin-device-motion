@@ -153,7 +153,7 @@ public class AccelListener extends CordovaPlugin implements SensorEventListener 
         // If found, then register as listener
         if ((list != null) && (list.size() > 0)) {
           this.mSensor = list.get(0);
-          this.sensorManager.registerListener(this, this.mSensor, SensorManager.SENSOR_DELAY_UI);
+          this.sensorManager.registerListener(this, this.mSensor, SensorManager.SENSOR_DELAY_GAME);
           this.setStatus(AccelListener.STARTING);
         } else {
           this.setStatus(AccelListener.ERROR_FAILED_TO_START);
